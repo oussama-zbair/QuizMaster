@@ -14,13 +14,13 @@
 ---
 
 ## 🚀 Live Demo
-[SmartQuizzy on Vercel](https://your-vercel-app-url.vercel.app/)
+[Try QuizMaster](https://your-vercel-app-url.vercel.app/)
 
 ---
 
 ## 📋 Overview
 
-SmartQuizzy is an interactive learning platform designed to help developers test and improve their knowledge in web development.  
+QuizMaster is an interactive learning platform designed to help developers test and improve their knowledge in web development.  
 The application features a **clean, modern interface** with category-based quizzes covering both **front-end** and **back-end** technologies.  
 
 The next step is extending the platform with a **backend API** so that teachers can create/manage quizzes and assign them to students.
@@ -77,29 +77,6 @@ The next step is extending the platform with a **backend API** so that teachers 
 - **Vercel** (deployment)  
 
 ---
-
-## 📁 Project Structure
-
-\`\`\`
-src/
-├── components/           # Reusable UI components
-│   ├── ui/              # Radix UI/Shadcn components
-│   ├── CategoryCard.tsx # Quiz category display
-│   ├── QuizCard.tsx     # Individual quiz cards
-│   └── QuizQuestion.tsx # Question component
-├── pages/               # Application pages
-│   ├── Home.tsx         # Landing page
-│   ├── QuizList.tsx     # Category quiz listing
-│   ├── QuizTaking.tsx   # Quiz interface
-│   └── QuizResults.tsx  # Results and scoring
-├── data/                # Static data (quizzes.json)
-├── types/               # TypeScript definitions
-├── hooks/               # Custom React hooks
-└── lib/                 # Utility functions
-\`\`\`
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -107,56 +84,31 @@ src/
 - npm or yarn  
 
 ### Installation
-\`\`\`bash
+- Fork the repository
+```bash
 git clone https://github.com/yourusername/smart-quizzy.git
-cd smart-quizzy
+cd QuizMaster
 npm install
 npm run dev
-\`\`\`
+```
 
 Then open:  
-\`\`\`
+```
 http://localhost:3000
-\`\`\`
+```
 
 ### Build for Production
-\`\`\`bash
+```bash
 npm run build
 npm run preview
-\`\`\`
+```
 
 ---
 
-## 🎮 How to Use
-
-1. **Choose a Category** → Frontend or Backend  
-2. **Pick a Quiz** → Select available quiz topic  
-3. **Answer Questions** → Multiple-choice quiz flow  
-4. **Review Results** → Score summary & retry option  
-
----
-
-## 🌟 Featured Quizzes
-
-- React Fundamentals  
-- TypeScript Essentials  
-- Advanced JavaScript  
-- Java OOP Basics  
-- Git Workflow Essentials  
-
----
 
 ## 📄 License
 
 Licensed under the MIT License.  
 
----
 
-## 🤝 Contributing
-
-Contributions are welcome! Open an issue or PR.  
-
----
-
-**Built with ❤️ using React, TypeScript, and Tailwind CSS.**
 
