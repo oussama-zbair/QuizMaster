@@ -1,0 +1,1127 @@
+{
+  "categories": [
+    {
+      "id": "frontend",
+      "name": "Frontend Development",
+      "description": "Master modern frontend technologies and best practices",
+      "icon": "code2",
+      "quizCount": 5,
+      "quizzes": [
+        {
+          "id": "react-basics",
+          "title": "React Fundamentals",
+          "description": "Test your knowledge of React components, hooks, and state management",
+          "category": "frontend",
+          "difficulty": "beginner",
+          "estimatedTime": 15,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the correct way to create a React functional component?",
+              "options": [
+                "function MyComponent() { return <div>Hello</div>; }",
+                "const MyComponent = () => { return <div>Hello</div>; }",
+                "class MyComponent extends React.Component { render() { return <div>Hello</div>; } }",
+                "Both A and B are correct"
+              ],
+              "correctAnswer": "Both A and B are correct",
+              "explanation": "React functional components can be written as regular functions or arrow functions."
+            },
+            {
+              "id": 2,
+              "question": "Which hook is used to manage state in functional components?",
+              "options": ["useState", "useEffect", "useContext", "useReducer"],
+              "correctAnswer": "useState",
+              "explanation": "useState is the primary hook for managing state in functional components."
+            },
+            {
+              "id": 3,
+              "question": "What does JSX stand for?",
+              "options": [
+                "JavaScript XML",
+                "Java Syntax Extension",
+                "JavaScript Extension",
+                "JSON XML"
+              ],
+              "correctAnswer": "JavaScript XML",
+              "explanation": "JSX stands for JavaScript XML and allows you to write HTML-like syntax in JavaScript."
+            },
+            {
+              "id": 4,
+              "question": "Which method is used to update state in a class component?",
+              "options": ["setState()", "updateState()", "changeState()", "modifyState()"],
+              "correctAnswer": "setState()",
+              "explanation": "setState() is the method used to update state in React class components."
+            },
+            {
+              "id": 5,
+              "question": "What is the purpose of useEffect hook?",
+              "options": [
+                "To manage component state",
+                "To handle side effects in functional components",
+                "To create context providers",
+                "To optimize component rendering"
+              ],
+              "correctAnswer": "To handle side effects in functional components",
+              "explanation": "useEffect is used to perform side effects like API calls, subscriptions, or DOM manipulation."
+            }
+          ]
+        },
+        {
+          "id": "react-hooks",
+          "title": "React Hooks Mastery",
+          "description": "Deep dive into React hooks and advanced patterns",
+          "category": "frontend",
+          "difficulty": "intermediate",
+          "estimatedTime": 25,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the correct dependency array for useEffect to run only once?",
+              "options": ["[]", "[1]", "undefined", "null"],
+              "correctAnswer": "[]",
+              "explanation": "An empty dependency array makes useEffect run only once after the initial render."
+            },
+            {
+              "id": 2,
+              "question": "Which hook would you use to optimize expensive calculations?",
+              "options": ["useMemo", "useCallback", "useEffect", "useState"],
+              "correctAnswer": "useMemo",
+              "explanation": "useMemo is used to memoize expensive calculations and prevent unnecessary re-computations."
+            },
+            {
+              "id": 3,
+              "question": "What does useCallback return?",
+              "options": [
+                "A memoized value",
+                "A memoized callback function",
+                "A state value",
+                "A reference to a DOM element"
+              ],
+              "correctAnswer": "A memoized callback function",
+              "explanation": "useCallback returns a memoized version of the callback function."
+            },
+            {
+              "id": 4,
+              "question": "When should you use useReducer instead of useState?",
+              "options": [
+                "For simple state updates",
+                "For complex state logic with multiple sub-values",
+                "For API calls",
+                "For DOM manipulation"
+              ],
+              "correctAnswer": "For complex state logic with multiple sub-values",
+              "explanation": "useReducer is preferred for complex state logic involving multiple sub-values or when the next state depends on the previous one."
+            }
+          ]
+        },
+        {
+          "id": "typescript-essentials",
+          "title": "TypeScript Essentials",
+          "description": "Essential TypeScript concepts for modern development",
+          "category": "frontend",
+          "difficulty": "intermediate",
+          "estimatedTime": 20,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the correct way to define an interface in TypeScript?",
+              "options": [
+                "interface User { name: string; age: number; }",
+                "type User = { name: string; age: number; }",
+                "class User { name: string; age: number; }",
+                "Both A and B are correct"
+              ],
+              "correctAnswer": "Both A and B are correct",
+              "explanation": "Both interfaces and type aliases can be used to define object shapes in TypeScript."
+            },
+            {
+              "id": 2,
+              "question": "What does the '?' operator do in TypeScript?",
+              "options": [
+                "Makes a property required",
+                "Makes a property optional",
+                "Creates a conditional type",
+                "Performs null checking"
+              ],
+              "correctAnswer": "Makes a property optional",
+              "explanation": "The '?' operator makes properties optional in interfaces and type definitions."
+            },
+            {
+              "id": 3,
+              "question": "Which utility type makes all properties of a type optional?",
+              "options": ["Partial<T>", "Required<T>", "Pick<T, K>", "Omit<T, K>"],
+              "correctAnswer": "Partial<T>",
+              "explanation": "Partial<T> creates a type with all properties of T set to optional."
+            },
+            {
+              "id": 4,
+              "question": "What is the difference between 'interface' and 'type' in TypeScript?",
+              "options": [
+                "No difference, they are completely interchangeable",
+                "Interfaces can be extended, types cannot",
+                "Interfaces can be merged, types cannot",
+                "Types are for primitives, interfaces for objects"
+              ],
+              "correctAnswer": "Interfaces can be merged, types cannot",
+              "explanation": "Interfaces support declaration merging, allowing multiple declarations to be merged into one."
+            }
+          ]
+        },
+        {
+          "id": "javascript-advanced",
+          "title": "Advanced JavaScript",
+          "description": "Advanced JavaScript concepts and ES6+ features",
+          "category": "frontend",
+          "difficulty": "advanced",
+          "estimatedTime": 30,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the difference between 'let' and 'const'?",
+              "options": [
+                "'let' is block-scoped, 'const' is function-scoped",
+                "'let' can be reassigned, 'const' cannot",
+                "'let' is hoisted, 'const' is not",
+                "There is no difference"
+              ],
+              "correctAnswer": "'let' can be reassigned, 'const' cannot",
+              "explanation": "Both 'let' and 'const' are block-scoped, but 'const' cannot be reassigned after declaration."
+            },
+            {
+              "id": 2,
+              "question": "What does the spread operator (...) do?",
+              "options": [
+                "Combines arrays",
+                "Spreads elements of an iterable",
+                "Creates a copy of an object",
+                "All of the above"
+              ],
+              "correctAnswer": "All of the above",
+              "explanation": "The spread operator can be used to spread array elements, combine arrays, and create shallow copies of objects."
+            },
+            {
+              "id": 3,
+              "question": "What is a closure in JavaScript?",
+              "options": [
+                "A way to close browser windows",
+                "A function that has access to variables in its outer scope",
+                "A method to stop code execution",
+                "A type of loop"
+              ],
+              "correctAnswer": "A function that has access to variables in its outer scope",
+              "explanation": "A closure is a function that retains access to its outer (enclosing) scope's variables even after the outer function has returned."
+            },
+            {
+              "id": 4,
+              "question": "What does 'this' refer to in an arrow function?",
+              "options": [
+                "The global object",
+                "The function itself",
+                "The lexical scope where it was defined",
+                "undefined"
+              ],
+              "correctAnswer": "The lexical scope where it was defined",
+              "explanation": "Arrow functions don't have their own 'this' binding; they inherit 'this' from the enclosing scope."
+            }
+          ]
+        },
+        {
+          "id": "css-grid-flexbox",
+          "title": "CSS Grid & Flexbox",
+          "description": "Master modern CSS layout techniques",
+          "category": "frontend",
+          "difficulty": "intermediate",
+          "estimatedTime": 20,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the main difference between Flexbox and CSS Grid?",
+              "options": [
+                "Flexbox is for 1D layouts, Grid is for 2D layouts",
+                "Grid is newer than Flexbox",
+                "Flexbox is faster than Grid",
+                "Grid only works in modern browsers"
+              ],
+              "correctAnswer": "Flexbox is for 1D layouts, Grid is for 2D layouts",
+              "explanation": "Flexbox is designed for one-dimensional layouts (row or column), while CSS Grid is designed for two-dimensional layouts."
+            },
+            {
+              "id": 2,
+              "question": "Which property centers flex items both horizontally and vertically?",
+              "options": [
+                "align-items: center; justify-content: center;",
+                "place-items: center;",
+                "center: both;",
+                "flex-center: true;"
+              ],
+              "correctAnswer": "align-items: center; justify-content: center;",
+              "explanation": "align-items centers items vertically, justify-content centers them horizontally in a flex container."
+            },
+            {
+              "id": 3,
+              "question": "What does 'fr' unit mean in CSS Grid?",
+              "options": [
+                "Frame rate",
+                "Fractional unit",
+                "Fixed ratio",
+                "Flexible response"
+              ],
+              "correctAnswer": "Fractional unit",
+              "explanation": "The 'fr' unit represents a fraction of the available space in the grid container."
+            }
+          ]
+        },
+        {
+          "id": "web-performance",
+          "title": "Web Performance Optimization",
+          "description": "Learn about optimizing web application performance",
+          "category": "frontend",
+          "difficulty": "advanced",
+          "estimatedTime": 25,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the Critical Rendering Path?",
+              "options": [
+                "The path users take through your website",
+                "The sequence of steps browsers take to render a page",
+                "The most important CSS rules",
+                "The fastest route for API calls"
+              ],
+              "correctAnswer": "The sequence of steps browsers take to render a page",
+              "explanation": "The Critical Rendering Path is the sequence of steps the browser takes to convert HTML, CSS, and JavaScript into pixels on the screen."
+            },
+            {
+              "id": 2,
+              "question": "What is lazy loading?",
+              "options": [
+                "Loading content slowly",
+                "Loading content only when needed",
+                "Loading content in the background",
+                "Loading content after page load"
+              ],
+              "correctAnswer": "Loading content only when needed",
+              "explanation": "Lazy loading is a technique that delays loading of non-critical resources until they are needed."
+            },
+            {
+              "id": 3,
+              "question": "Which metric measures how long it takes for the largest element to render?",
+              "options": [
+                "First Contentful Paint (FCP)",
+                "Largest Contentful Paint (LCP)",
+                "Time to Interactive (TTI)",
+                "Cumulative Layout Shift (CLS)"
+              ],
+              "correctAnswer": "Largest Contentful Paint (LCP)",
+              "explanation": "LCP measures the time it takes for the largest content element visible in the viewport to render."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "Backend Development",
+      "description": "Server-side technologies and development practices",
+      "icon": "server",
+      "quizCount": 5,
+      "quizzes": [
+        {
+          "id": "java-oop",
+          "title": "Java Object-Oriented Programming",
+          "description": "Test your understanding of OOP principles in Java",
+          "category": "backend",
+          "difficulty": "intermediate",
+          "estimatedTime": 20,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What are the four pillars of Object-Oriented Programming?",
+              "options": [
+                "Inheritance, Polymorphism, Encapsulation, Abstraction",
+                "Classes, Objects, Methods, Variables",
+                "Public, Private, Protected, Static",
+                "Create, Read, Update, Delete"
+              ],
+              "correctAnswer": "Inheritance, Polymorphism, Encapsulation, Abstraction",
+              "explanation": "The four pillars of OOP are Inheritance, Polymorphism, Encapsulation, and Abstraction."
+            },
+            {
+              "id": 2,
+              "question": "What is method overloading in Java?",
+              "options": [
+                "Defining multiple methods with the same name but different parameters",
+                "Overriding a method from a parent class",
+                "Loading methods at runtime",
+                "Creating abstract methods"
+              ],
+              "correctAnswer": "Defining multiple methods with the same name but different parameters",
+              "explanation": "Method overloading allows multiple methods with the same name but different parameter lists."
+            },
+            {
+              "id": 3,
+              "question": "Which keyword is used to inherit from a class in Java?",
+              "options": ["extends", "implements", "inherits", "super"],
+              "correctAnswer": "extends",
+              "explanation": "The 'extends' keyword is used to inherit from a class in Java."
+            },
+            {
+              "id": 4,
+              "question": "What is the difference between abstract class and interface in Java?",
+              "options": [
+                "Abstract classes can have concrete methods, interfaces cannot",
+                "Interfaces can have constructors, abstract classes cannot",
+                "Abstract classes support multiple inheritance, interfaces don't",
+                "There is no difference"
+              ],
+              "correctAnswer": "Abstract classes can have concrete methods, interfaces cannot",
+              "explanation": "Abstract classes can contain both abstract and concrete methods, while traditional interfaces only contain abstract methods."
+            }
+          ]
+        },
+        {
+          "id": "spring-boot",
+          "title": "Spring Boot Fundamentals",
+          "description": "Learn the basics of Spring Boot framework",
+          "category": "backend",
+          "difficulty": "intermediate",
+          "estimatedTime": 25,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the main advantage of Spring Boot?",
+              "options": [
+                "It's faster than Spring Framework",
+                "It provides auto-configuration and convention over configuration",
+                "It only works with Java 17+",
+                "It replaces the need for databases"
+              ],
+              "correctAnswer": "It provides auto-configuration and convention over configuration",
+              "explanation": "Spring Boot's main advantage is auto-configuration and following convention over configuration principles."
+            },
+            {
+              "id": 2,
+              "question": "Which annotation is used to mark a class as a REST controller?",
+              "options": ["@Controller", "@RestController", "@Service", "@Component"],
+              "correctAnswer": "@RestController",
+              "explanation": "@RestController combines @Controller and @ResponseBody annotations for RESTful web services."
+            },
+            {
+              "id": 3,
+              "question": "What is the purpose of @Autowired annotation?",
+              "options": [
+                "To create new instances",
+                "To inject dependencies automatically",
+                "To configure database connections",
+                "To handle HTTP requests"
+              ],
+              "correctAnswer": "To inject dependencies automatically",
+              "explanation": "@Autowired annotation is used for automatic dependency injection in Spring."
+            }
+          ]
+        },
+        {
+          "id": "database-sql",
+          "title": "Database Design & SQL",
+          "description": "Master database concepts and SQL queries",
+          "category": "backend",
+          "difficulty": "intermediate",
+          "estimatedTime": 25,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is a primary key?",
+              "options": [
+                "A key that opens the primary database",
+                "A unique identifier for each row in a table",
+                "The first column in a table",
+                "A key used for encryption"
+              ],
+              "correctAnswer": "A unique identifier for each row in a table",
+              "explanation": "A primary key is a unique identifier that ensures each row in a table can be uniquely identified."
+            },
+            {
+              "id": 2,
+              "question": "What is the difference between INNER JOIN and LEFT JOIN?",
+              "options": [
+                "No difference",
+                "INNER JOIN returns only matching rows, LEFT JOIN returns all rows from left table",
+                "LEFT JOIN is faster than INNER JOIN",
+                "INNER JOIN is for multiple tables, LEFT JOIN is for two tables"
+              ],
+              "correctAnswer": "INNER JOIN returns only matching rows, LEFT JOIN returns all rows from left table",
+              "explanation": "INNER JOIN returns only rows that have matching values in both tables, while LEFT JOIN returns all rows from the left table and matching rows from the right table."
+            },
+            {
+              "id": 3,
+              "question": "What is database normalization?",
+              "options": [
+                "Making database names standard",
+                "Organizing data to reduce redundancy and improve integrity",
+                "Converting all data to numbers",
+                "Backing up the database"
+              ],
+              "correctAnswer": "Organizing data to reduce redundancy and improve integrity",
+              "explanation": "Database normalization is the process of organizing data to minimize redundancy and dependency."
+            }
+          ]
+        },
+        {
+          "id": "rest-apis",
+          "title": "RESTful API Design",
+          "description": "Learn REST principles and API best practices",
+          "category": "backend",
+          "difficulty": "advanced",
+          "estimatedTime": 30,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What does REST stand for?",
+              "options": [
+                "Really Easy Simple Technology",
+                "Representational State Transfer",
+                "Remote Execution Service Technology",
+                "Rapid Enterprise Service Tool"
+              ],
+              "correctAnswer": "Representational State Transfer",
+              "explanation": "REST stands for Representational State Transfer, an architectural style for distributed systems."
+            },
+            {
+              "id": 2,
+              "question": "Which HTTP method should be used to update a resource?",
+              "options": ["GET", "POST", "PUT", "DELETE"],
+              "correctAnswer": "PUT",
+              "explanation": "PUT is the HTTP method typically used to update existing resources in RESTful APIs."
+            },
+            {
+              "id": 3,
+              "question": "What is the purpose of HTTP status codes?",
+              "options": [
+                "To encrypt data",
+                "To indicate the result of an HTTP request",
+                "To compress responses",
+                "To authenticate users"
+              ],
+              "correctAnswer": "To indicate the result of an HTTP request",
+              "explanation": "HTTP status codes indicate whether a specific HTTP request has been successfully completed and provide information about the result."
+            }
+          ]
+        },
+        {
+          "id": "git-workflow",
+          "title": "Git Workflow & Version Control",
+          "description": "Master Git commands and collaborative workflows",
+          "category": "backend",
+          "difficulty": "beginner",
+          "estimatedTime": 20,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the difference between 'git merge' and 'git rebase'?",
+              "options": [
+                "No difference, they do the same thing",
+                "Merge creates a merge commit, rebase rewrites history",
+                "Rebase is faster than merge",
+                "Merge is for local changes, rebase is for remote changes"
+              ],
+              "correctAnswer": "Merge creates a merge commit, rebase rewrites history",
+              "explanation": "Git merge creates a new commit that combines changes, while rebase rewrites commit history by moving commits to a new base."
+            },
+            {
+              "id": 2,
+              "question": "What does 'git stash' do?",
+              "options": [
+                "Permanently deletes changes",
+                "Temporarily saves changes without committing",
+                "Creates a new branch",
+                "Pushes changes to remote repository"
+              ],
+              "correctAnswer": "Temporarily saves changes without committing",
+              "explanation": "Git stash temporarily saves uncommitted changes so you can work on something else and come back to apply them later."
+            },
+            {
+              "id": 3,
+              "question": "Which command is used to create a new branch and switch to it?",
+              "options": [
+                "git branch new-branch",
+                "git checkout new-branch",
+                "git checkout -b new-branch",
+                "git switch new-branch"
+              ],
+              "correctAnswer": "git checkout -b new-branch",
+              "explanation": "The 'git checkout -b' command creates a new branch and immediately switches to it in one command."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "algorithms",
+      "name": "Algorithms & Data Structures",
+      "description": "Master fundamental algorithms and data structures",
+      "icon": "brain",
+      "quizCount": 4,
+      "quizzes": [
+        {
+          "id": "sorting-algorithms",
+          "title": "Sorting Algorithms",
+          "description": "Learn about different sorting algorithms and their complexities",
+          "category": "algorithms",
+          "difficulty": "intermediate",
+          "estimatedTime": 20,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the average time complexity of Quick Sort?",
+              "options": ["O(n)", "O(n log n)", "O(n²)", "O(log n)"],
+              "correctAnswer": "O(n log n)",
+              "explanation": "Quick Sort has an average time complexity of O(n log n), though its worst case is O(n²)."
+            },
+            {
+              "id": 2,
+              "question": "Which sorting algorithm is stable?",
+              "options": ["Quick Sort", "Heap Sort", "Merge Sort", "Selection Sort"],
+              "correctAnswer": "Merge Sort",
+              "explanation": "Merge Sort is a stable sorting algorithm, meaning it preserves the relative order of equal elements."
+            },
+            {
+              "id": 3,
+              "question": "What is the space complexity of Bubble Sort?",
+              "options": ["O(1)", "O(n)", "O(n log n)", "O(n²)"],
+              "correctAnswer": "O(1)",
+              "explanation": "Bubble Sort has a space complexity of O(1) as it sorts in-place without requiring additional space."
+            },
+            {
+              "id": 4,
+              "question": "Which algorithm is best for sorting large datasets?",
+              "options": ["Bubble Sort", "Insertion Sort", "Merge Sort", "Selection Sort"],
+              "correctAnswer": "Merge Sort",
+              "explanation": "Merge Sort is efficient for large datasets with consistent O(n log n) time complexity."
+            },
+            {
+              "id": 5,
+              "question": "What is the best case time complexity of Insertion Sort?",
+              "options": ["O(n)", "O(n log n)", "O(n²)", "O(1)"],
+              "correctAnswer": "O(n)",
+              "explanation": "Insertion Sort has O(n) best case when the array is already sorted."
+            }
+          ]
+        },
+        {
+          "id": "data-structures",
+          "title": "Data Structures Fundamentals",
+          "description": "Understanding arrays, linked lists, stacks, queues, and trees",
+          "category": "algorithms",
+          "difficulty": "intermediate",
+          "estimatedTime": 25,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the time complexity for searching in a balanced BST?",
+              "options": ["O(1)", "O(log n)", "O(n)", "O(n log n)"],
+              "correctAnswer": "O(log n)",
+              "explanation": "A balanced Binary Search Tree provides O(log n) search time complexity."
+            },
+            {
+              "id": 2,
+              "question": "Which data structure follows LIFO principle?",
+              "options": ["Queue", "Array", "Stack", "Linked List"],
+              "correctAnswer": "Stack",
+              "explanation": "Stack follows Last In First Out (LIFO) principle where the last element added is the first to be removed."
+            },
+            {
+              "id": 3,
+              "question": "What is the main advantage of a linked list over an array?",
+              "options": ["Faster access", "Less memory usage", "Dynamic size", "Better cache locality"],
+              "correctAnswer": "Dynamic size",
+              "explanation": "Linked lists can grow and shrink dynamically during runtime, unlike arrays with fixed size."
+            },
+            {
+              "id": 4,
+              "question": "In a hash table, what happens when two keys hash to the same index?",
+              "options": ["Error occurs", "Collision", "Automatic resize", "Data loss"],
+              "correctAnswer": "Collision",
+              "explanation": "When two keys hash to the same index, it's called a collision and must be handled using techniques like chaining or open addressing."
+            },
+            {
+              "id": 5,
+              "question": "What is the height of a complete binary tree with n nodes?",
+              "options": ["O(log n)", "O(n)", "O(n log n)", "O(1)"],
+              "correctAnswer": "O(log n)",
+              "explanation": "A complete binary tree has height O(log n) where n is the number of nodes."
+            }
+          ]
+        },
+        {
+          "id": "graph-algorithms",
+          "title": "Graph Algorithms",
+          "description": "Explore graph traversal and shortest path algorithms",
+          "category": "algorithms",
+          "difficulty": "advanced",
+          "estimatedTime": 30,
+          "questions": [
+            {
+              "id": 1,
+              "question": "Which algorithm is used to find the shortest path in a weighted graph?",
+              "options": ["BFS", "DFS", "Dijkstra's", "Kruskal's"],
+              "correctAnswer": "Dijkstra's",
+              "explanation": "Dijkstra's algorithm finds the shortest path between nodes in a weighted graph with non-negative weights."
+            },
+            {
+              "id": 2,
+              "question": "What is the time complexity of BFS in a graph with V vertices and E edges?",
+              "options": ["O(V)", "O(E)", "O(V + E)", "O(V * E)"],
+              "correctAnswer": "O(V + E)",
+              "explanation": "BFS visits each vertex once and each edge once, resulting in O(V + E) time complexity."
+            },
+            {
+              "id": 3,
+              "question": "Which algorithm detects cycles in a directed graph?",
+              "options": ["BFS", "DFS with color marking", "Dijkstra's", "Kruskal's"],
+              "correctAnswer": "DFS with color marking",
+              "explanation": "DFS with three-color marking (white, gray, black) can detect cycles in directed graphs."
+            },
+            {
+              "id": 4,
+              "question": "What is the purpose of Kruskal's algorithm?",
+              "options": ["Shortest path", "Minimum spanning tree", "Topological sort", "Cycle detection"],
+              "correctAnswer": "Minimum spanning tree",
+              "explanation": "Kruskal's algorithm finds the minimum spanning tree of a connected, undirected graph."
+            },
+            {
+              "id": 5,
+              "question": "In which scenario would you use topological sorting?",
+              "options": ["Finding shortest path", "Detecting cycles", "Task scheduling", "Finding MST"],
+              "correctAnswer": "Task scheduling",
+              "explanation": "Topological sorting is used for scheduling tasks with dependencies, ensuring prerequisites are completed first."
+            }
+          ]
+        },
+        {
+          "id": "dynamic-programming",
+          "title": "Dynamic Programming",
+          "description": "Master optimization problems using dynamic programming",
+          "category": "algorithms",
+          "difficulty": "advanced",
+          "estimatedTime": 35,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What are the two main properties of dynamic programming?",
+              "options": ["Recursion and iteration", "Optimal substructure and overlapping subproblems", "Greedy choice and optimal substructure", "Divide and conquer"],
+              "correctAnswer": "Optimal substructure and overlapping subproblems",
+              "explanation": "Dynamic programming requires optimal substructure (optimal solution contains optimal solutions to subproblems) and overlapping subproblems."
+            },
+            {
+              "id": 2,
+              "question": "What is memoization in dynamic programming?",
+              "options": ["Memory optimization", "Storing computed results", "Recursive calls", "Space complexity reduction"],
+              "correctAnswer": "Storing computed results",
+              "explanation": "Memoization is a technique where we store the results of expensive function calls and return the cached result when the same inputs occur again."
+            },
+            {
+              "id": 3,
+              "question": "What is the time complexity of the optimal solution to the 0/1 Knapsack problem using DP?",
+              "options": ["O(n)", "O(n²)", "O(nW)", "O(2ⁿ)"],
+              "correctAnswer": "O(nW)",
+              "explanation": "The 0/1 Knapsack problem can be solved in O(nW) time using dynamic programming, where n is the number of items and W is the knapsack capacity."
+            },
+            {
+              "id": 4,
+              "question": "Which approach is better for problems with optimal substructure?",
+              "options": ["Greedy algorithm", "Brute force", "Dynamic programming", "Backtracking"],
+              "correctAnswer": "Dynamic programming",
+              "explanation": "Dynamic programming is ideal for optimization problems with optimal substructure and overlapping subproblems."
+            },
+            {
+              "id": 5,
+              "question": "What is the difference between top-down and bottom-up DP?",
+              "options": ["Recursion vs iteration", "Space vs time", "Optimal vs suboptimal", "Simple vs complex"],
+              "correctAnswer": "Recursion vs iteration",
+              "explanation": "Top-down DP uses recursion with memoization, while bottom-up DP uses iteration to build solutions from smaller subproblems."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design-patterns",
+      "name": "Design Patterns",
+      "description": "Learn software design patterns and architectural principles",
+      "icon": "palette",
+      "quizCount": 4,
+      "quizzes": [
+        {
+          "id": "creational-patterns",
+          "title": "Creational Design Patterns",
+          "description": "Master Singleton, Factory, and Builder patterns",
+          "category": "design-patterns",
+          "difficulty": "intermediate",
+          "estimatedTime": 25,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the main purpose of the Singleton pattern?",
+              "options": ["Create multiple instances", "Ensure only one instance exists", "Simplify object creation", "Improve performance"],
+              "correctAnswer": "Ensure only one instance exists",
+              "explanation": "The Singleton pattern ensures that a class has only one instance and provides global access to that instance."
+            },
+            {
+              "id": 2,
+              "question": "Which pattern is best for creating objects without specifying their exact class?",
+              "options": ["Singleton", "Factory Method", "Observer", "Strategy"],
+              "correctAnswer": "Factory Method",
+              "explanation": "The Factory Method pattern creates objects without specifying the exact class, allowing subclasses to decide which class to instantiate."
+            },
+            {
+              "id": 3,
+              "question": "What problem does the Builder pattern solve?",
+              "options": ["Memory leaks", "Complex object construction", "Thread safety", "Code duplication"],
+              "correctAnswer": "Complex object construction",
+              "explanation": "The Builder pattern provides a flexible solution for constructing complex objects step by step."
+            },
+            {
+              "id": 4,
+              "question": "Which pattern is used to create families of related objects?",
+              "options": ["Factory Method", "Abstract Factory", "Builder", "Prototype"],
+              "correctAnswer": "Abstract Factory",
+              "explanation": "Abstract Factory provides an interface for creating families of related or dependent objects."
+            },
+            {
+              "id": 5,
+              "question": "What is a potential drawback of the Singleton pattern?",
+              "options": ["High memory usage", "Difficult testing", "Poor performance", "Complex implementation"],
+              "correctAnswer": "Difficult testing",
+              "explanation": "Singleton can make unit testing difficult due to global state and dependencies that are hard to mock."
+            }
+          ]
+        },
+        {
+          "id": "structural-patterns",
+          "title": "Structural Design Patterns",
+          "description": "Understand Adapter, Decorator, and Facade patterns",
+          "category": "design-patterns",
+          "difficulty": "intermediate",
+          "estimatedTime": 25,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the primary purpose of the Adapter pattern?",
+              "options": ["Add new functionality", "Make incompatible interfaces work together", "Simplify complex interfaces", "Improve performance"],
+              "correctAnswer": "Make incompatible interfaces work together",
+              "explanation": "The Adapter pattern allows incompatible interfaces to work together by providing a wrapper that translates one interface to another."
+            },
+            {
+              "id": 2,
+              "question": "Which pattern allows you to add behavior to objects dynamically?",
+              "options": ["Adapter", "Facade", "Decorator", "Proxy"],
+              "correctAnswer": "Decorator",
+              "explanation": "The Decorator pattern allows behavior to be added to objects dynamically without altering their structure."
+            },
+            {
+              "id": 3,
+              "question": "What does the Facade pattern provide?",
+              "options": ["Complex interface", "Unified interface to subsystems", "Direct access to objects", "Multiple inheritance"],
+              "correctAnswer": "Unified interface to subsystems",
+              "explanation": "The Facade pattern provides a simplified, unified interface to a complex subsystem."
+            },
+            {
+              "id": 4,
+              "question": "When would you use the Proxy pattern?",
+              "options": ["To add functionality", "To control access to an object", "To create object families", "To simplify interfaces"],
+              "correctAnswer": "To control access to an object",
+              "explanation": "The Proxy pattern provides a placeholder or surrogate to control access to another object."
+            },
+            {
+              "id": 5,
+              "question": "What is the difference between Adapter and Facade patterns?",
+              "options": ["Adapter wraps one class, Facade wraps multiple", "No difference", "Adapter is for creation, Facade for behavior", "Adapter is simpler"],
+              "correctAnswer": "Adapter wraps one class, Facade wraps multiple",
+              "explanation": "Adapter typically wraps a single class to change its interface, while Facade provides a simplified interface to multiple classes in a subsystem."
+            }
+          ]
+        },
+        {
+          "id": "behavioral-patterns",
+          "title": "Behavioral Design Patterns",
+          "description": "Explore Observer, Strategy, and Command patterns",
+          "category": "design-patterns",
+          "difficulty": "advanced",
+          "estimatedTime": 30,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the main benefit of the Observer pattern?",
+              "options": ["Improved performance", "Loose coupling between subject and observers", "Simplified code", "Better memory usage"],
+              "correctAnswer": "Loose coupling between subject and observers",
+              "explanation": "The Observer pattern promotes loose coupling by allowing subjects and observers to interact without knowing details about each other."
+            },
+            {
+              "id": 2,
+              "question": "When should you use the Strategy pattern?",
+              "options": ["When you need multiple algorithms for a task", "When creating object families", "When simplifying interfaces", "When controlling access"],
+              "correctAnswer": "When you need multiple algorithms for a task",
+              "explanation": "The Strategy pattern is used when you have multiple algorithms for a specific task and want to make them interchangeable."
+            },
+            {
+              "id": 3,
+              "question": "What does the Command pattern encapsulate?",
+              "options": ["Data structures", "User interfaces", "Requests as objects", "Database connections"],
+              "correctAnswer": "Requests as objects",
+              "explanation": "The Command pattern encapsulates requests as objects, allowing you to parameterize clients with different requests."
+            },
+            {
+              "id": 4,
+              "question": "Which pattern is useful for implementing undo functionality?",
+              "options": ["Observer", "Strategy", "Command", "State"],
+              "correctAnswer": "Command",
+              "explanation": "The Command pattern is ideal for implementing undo functionality because commands can store state and be reversed."
+            },
+            {
+              "id": 5,
+              "question": "What problem does the State pattern solve?",
+              "options": ["Object creation", "Interface compatibility", "Behavior change based on internal state", "Memory management"],
+              "correctAnswer": "Behavior change based on internal state",
+              "explanation": "The State pattern allows an object to change its behavior when its internal state changes, appearing as if the object changed its class."
+            }
+          ]
+        },
+        {
+          "id": "solid-principles",
+          "title": "SOLID Principles",
+          "description": "Master the five fundamental principles of object-oriented design",
+          "category": "design-patterns",
+          "difficulty": "intermediate",
+          "estimatedTime": 20,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What does the 'S' in SOLID stand for?",
+              "options": ["Simplicity Principle", "Single Responsibility Principle", "Substitution Principle", "Separation Principle"],
+              "correctAnswer": "Single Responsibility Principle",
+              "explanation": "The Single Responsibility Principle states that a class should have only one reason to change, meaning it should have only one job or responsibility."
+            },
+            {
+              "id": 2,
+              "question": "What does the Open/Closed Principle state?",
+              "options": ["Classes should be open for modification", "Classes should be closed for extension", "Classes should be open for extension, closed for modification", "Classes should be both open and closed"],
+              "correctAnswer": "Classes should be open for extension, closed for modification",
+              "explanation": "The Open/Closed Principle states that software entities should be open for extension but closed for modification."
+            },
+            {
+              "id": 3,
+              "question": "Which principle is violated when a subclass cannot replace its parent class?",
+              "options": ["Single Responsibility", "Open/Closed", "Liskov Substitution", "Interface Segregation"],
+              "correctAnswer": "Liskov Substitution",
+              "explanation": "The Liskov Substitution Principle states that objects of a superclass should be replaceable with objects of its subclasses without breaking the application."
+            },
+            {
+              "id": 4,
+              "question": "What does the Interface Segregation Principle recommend?",
+              "options": ["Use one large interface", "Create multiple specific interfaces", "Avoid interfaces entirely", "Combine all methods in one interface"],
+              "correctAnswer": "Create multiple specific interfaces",
+              "explanation": "The Interface Segregation Principle states that clients should not be forced to depend on interfaces they don't use."
+            },
+            {
+              "id": 5,
+              "question": "What is the main idea behind the Dependency Inversion Principle?",
+              "options": ["High-level modules should depend on low-level modules", "Depend on abstractions, not concretions", "Avoid all dependencies", "Create circular dependencies"],
+              "correctAnswer": "Depend on abstractions, not concretions",
+              "explanation": "The Dependency Inversion Principle states that high-level modules should not depend on low-level modules; both should depend on abstractions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security Concepts",
+      "description": "Master cybersecurity fundamentals and secure coding practices",
+      "icon": "shield",
+      "quizCount": 4,
+      "quizzes": [
+        {
+          "id": "web-security",
+          "title": "Web Application Security",
+          "description": "Learn about common web vulnerabilities and defenses",
+          "category": "security",
+          "difficulty": "intermediate",
+          "estimatedTime": 25,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What does XSS stand for?",
+              "options": ["Cross-Site Scripting", "External Style Sheets", "Extended Security Standard", "Cross-System Synchronization"],
+              "correctAnswer": "Cross-Site Scripting",
+              "explanation": "XSS (Cross-Site Scripting) is a vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users."
+            },
+            {
+              "id": 2,
+              "question": "Which HTTP header helps prevent clickjacking attacks?",
+              "options": ["Content-Type", "X-Frame-Options", "Authorization", "Accept"],
+              "correctAnswer": "X-Frame-Options",
+              "explanation": "The X-Frame-Options header prevents pages from being embedded in frames, protecting against clickjacking attacks."
+            },
+            {
+              "id": 3,
+              "question": "What is SQL injection?",
+              "options": ["Database optimization", "Malicious SQL code insertion", "SQL query caching", "Database backup method"],
+              "correctAnswer": "Malicious SQL code insertion",
+              "explanation": "SQL injection is a vulnerability where attackers can insert malicious SQL code into application queries to access or manipulate database data."
+            },
+            {
+              "id": 4,
+              "question": "Which practice helps prevent CSRF attacks?",
+              "options": ["Input validation", "CSRF tokens", "SQL parameterization", "Password hashing"],
+              "correctAnswer": "CSRF tokens",
+              "explanation": "CSRF tokens are unique, secret values that help verify that requests are legitimate and not forged by malicious sites."
+            },
+            {
+              "id": 5,
+              "question": "What is the purpose of Content Security Policy (CSP)?",
+              "options": ["Encrypt data", "Control resource loading", "Authenticate users", "Compress content"],
+              "correctAnswer": "Control resource loading",
+              "explanation": "CSP is a security header that helps prevent XSS attacks by controlling which resources (scripts, styles, etc.) can be loaded by the browser."
+            }
+          ]
+        },
+        {
+          "id": "cryptography",
+          "title": "Cryptography Fundamentals",
+          "description": "Understand encryption, hashing, and digital signatures",
+          "category": "security",
+          "difficulty": "advanced",
+          "estimatedTime": 30,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the difference between symmetric and asymmetric encryption?",
+              "options": ["Speed vs security", "Same key vs different keys", "Old vs new technology", "Simple vs complex algorithms"],
+              "correctAnswer": "Same key vs different keys",
+              "explanation": "Symmetric encryption uses the same key for encryption and decryption, while asymmetric encryption uses different keys (public and private)."
+            },
+            {
+              "id": 2,
+              "question": "What is a hash function's primary property?",
+              "options": ["Reversible", "One-way function", "Requires a key", "Always produces same length output"],
+              "correctAnswer": "One-way function",
+              "explanation": "Hash functions are one-way functions that are easy to compute in one direction but computationally infeasible to reverse."
+            },
+            {
+              "id": 3,
+              "question": "Which algorithm is commonly used for digital signatures?",
+              "options": ["AES", "RSA", "MD5", "DES"],
+              "correctAnswer": "RSA",
+              "explanation": "RSA is commonly used for digital signatures because it provides authentication, non-repudiation, and integrity verification."
+            },
+            {
+              "id": 4,
+              "question": "What is a salt in password hashing?",
+              "options": ["Encryption key", "Random data added to password", "Hashing algorithm", "Password strength requirement"],
+              "correctAnswer": "Random data added to password",
+              "explanation": "A salt is random data added to passwords before hashing to prevent rainbow table attacks and ensure unique hashes for identical passwords."
+            },
+            {
+              "id": 5,
+              "question": "What does PKI stand for?",
+              "options": ["Private Key Infrastructure", "Public Key Infrastructure", "Password Key Integration", "Protected Key Implementation"],
+              "correctAnswer": "Public Key Infrastructure",
+              "explanation": "PKI (Public Key Infrastructure) is a framework for managing digital keys and certificates in asymmetric cryptography."
+            }
+          ]
+        },
+        {
+          "id": "authentication",
+          "title": "Authentication & Authorization",
+          "description": "Learn about identity verification and access control",
+          "category": "security",
+          "difficulty": "intermediate",
+          "estimatedTime": 20,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the difference between authentication and authorization?",
+              "options": ["No difference", "Authentication verifies identity, authorization grants access", "Authentication grants access, authorization verifies identity", "Both verify identity"],
+              "correctAnswer": "Authentication verifies identity, authorization grants access",
+              "explanation": "Authentication verifies who you are, while authorization determines what you can access or do."
+            },
+            {
+              "id": 2,
+              "question": "What does MFA stand for?",
+              "options": ["Multiple Factor Authentication", "Multi-Factor Authentication", "Managed File Access", "Master File Authorization"],
+              "correctAnswer": "Multi-Factor Authentication",
+              "explanation": "MFA (Multi-Factor Authentication) requires users to provide multiple forms of verification to enhance security."
+            },
+            {
+              "id": 3,
+              "question": "Which authentication factor is 'something you know'?",
+              "options": ["Fingerprint", "Password", "Smart card", "Voice recognition"],
+              "correctAnswer": "Password",
+              "explanation": "Passwords, PINs, and security questions are examples of 'something you know' authentication factors."
+            },
+            {
+              "id": 4,
+              "question": "What is OAuth primarily used for?",
+              "options": ["Password storage", "Authorization delegation", "Data encryption", "User registration"],
+              "correctAnswer": "Authorization delegation",
+              "explanation": "OAuth is an authorization framework that allows applications to obtain limited access to user accounts without exposing passwords."
+            },
+            {
+              "id": 5,
+              "question": "What is the principle of least privilege?",
+              "options": ["Give maximum access to all users", "Give minimum necessary access", "Remove all privileges", "Equal access for everyone"],
+              "correctAnswer": "Give minimum necessary access",
+              "explanation": "The principle of least privilege means giving users only the minimum level of access required to perform their job functions."
+            }
+          ]
+        },
+        {
+          "id": "network-security",
+          "title": "Network Security",
+          "description": "Understand firewalls, VPNs, and network attack prevention",
+          "category": "security",
+          "difficulty": "intermediate",
+          "estimatedTime": 25,
+          "questions": [
+            {
+              "id": 1,
+              "question": "What is the primary purpose of a firewall?",
+              "options": ["Encrypt data", "Monitor network traffic and block threats", "Store passwords", "Speed up connections"],
+              "correctAnswer": "Monitor network traffic and block threats",
+              "explanation": "Firewalls monitor and control incoming and outgoing network traffic based on predetermined security rules."
+            },
+            {
+              "id": 2,
+              "question": "What does VPN stand for?",
+              "options": ["Very Private Network", "Virtual Private Network", "Verified Personal Network", "Variable Protocol Network"],
+              "correctAnswer": "Virtual Private Network",
+              "explanation": "VPN (Virtual Private Network) creates a secure, encrypted connection over a public network."
+            },
+            {
+              "id": 3,
+              "question": "What is a DDoS attack?",
+              "options": ["Data theft", "Distributed Denial of Service", "Database corruption", "Direct Data Override"],
+              "correctAnswer": "Distributed Denial of Service",
+              "explanation": "DDoS attacks overwhelm a target system with traffic from multiple sources to make it unavailable to legitimate users."
+            },
+            {
+              "id": 4,
+              "question": "Which port is commonly used for HTTPS?",
+              "options": ["80", "443", "22", "21"],
+              "correctAnswer": "443",
+              "explanation": "Port 443 is the standard port for HTTPS (HTTP over TLS/SSL) secure web traffic."
+            },
+            {
+              "id": 5,
+              "question": "What is the purpose of TLS/SSL?",
+              "options": ["Speed up connections", "Encrypt data in transit", "Store user data", "Manage user accounts"],
+              "correctAnswer": "Encrypt data in transit",
+              "explanation": "TLS/SSL protocols encrypt data transmitted between clients and servers to ensure confidentiality and integrity."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
