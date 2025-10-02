@@ -14,7 +14,7 @@
 ---
 
 ## 🚀 Live Demo
-[Try QuizMaster](https://quiz-master-five-murex.vercel.app)
+[Try QuizMaster](https://quiz-master-dojo.vercel.app/)
 
 ---
 
